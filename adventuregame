@@ -1,0 +1,148 @@
+def wholegame2():
+    def mexico():
+        print("have fun!")
+        input11 = input("do you want to stay in a resort or the town?")
+        if input11.lower() == "town":
+            print ("you come across tuckers python and you steal it")
+            wholegame()
+        elif input11.lower()== "resort":
+            print("pool get shut down and you get SUPER BORED :(")
+            wholegame()
+        else:
+            print("resort or town")
+            mexico()
+
+    def snowboard():
+        print ("good choice!")
+        input10 = input("there is someone stuck in the trees, do you help?")
+        if input10.lower() == "yes":
+            print("the path was to hard to ride, you die in the same tree")
+            wholegame()
+        elif input10.lower() == "no":
+            print("way to mind your business, after a great run you find $20 in the ground")
+            wholegame()
+        else:
+            print("yes or no")
+            snowboard()
+
+    def japan():
+        print("good choice")
+        input9 = input("do you want to snowboard or visit tokyo?")
+        if input9.lower() == "snowboard":
+            snowboard()
+        elif input9.lower() == "tokyo":
+            city()
+        else:
+            print("tokyo or snowboard")
+            japan()
+
+    def airport():
+        print("you head towards the airport")
+        input8 = input("where will you go, mexico or japan?")
+        if input8.lower() == "japan":
+            japan()
+        elif input8.lower() == "mexico":
+            mexico()
+        else:
+            print("mexico or japan")
+            airport()
+
+
+
+    def countrymoon():
+        print("The ship blasts off and takes you to the moon,the ship isnt safe to fly because of a broken wing, you are stranded")
+        input7 = input("do you try to repair the ship or look for food?")
+        if input7.lower() == "repair":
+            print("you are not qualified to be in space, you didnt put the suit on right and space kills you")
+            wholegame()
+        elif input7.lower() == "look for food":
+            print("you find supplies for a lifetime and an xbox, enjoy;)")
+            wholegame()
+        else:
+            print("look for food or repair")
+            countrymoon()
+
+    def countryalien():
+        print("It sends a signal to the Mothership, you have started an alien invasion")
+        input6 = input("the leader wants to talk, do you come in peace, yes or no?")
+        if input6.lower() == "yes":
+            print("the leader respects you, he gives you his crown, you now lead an advanced alien race")
+            wholegame()
+        elif input6.lower() == "no":
+            print("out of anger they blow the planet up")
+            wholegame()
+        else:
+            print("yes or no")
+            countryalien()
+    def country():
+        print("you are headed to the countryside when BOOOOM!!! an astroid, lets check it out")
+        input5 = input("you see a rocket ship and go inside, there are two blinking buttons, do you push red or blue?")
+        if input5.lower() == "red":
+            countryalien()
+        elif input5.lower() == "blue":
+            countrymoon()
+        else:
+            print ("red or blue")
+            country()
+
+
+
+    def citypolice():
+        print ("way to help, but you were caught calling")
+        input4 = input ("you can fight back or try to talk it out, what will it be?")
+        if input4.lower() == "talk" :
+            print ("They wont listen, you are shot")
+            wholegame()
+        elif input4.lower() == "fight":
+            print("You get beat up, but leave with you life")
+            wholegame()
+        else:
+            print("fight or talk only")
+            citypolice()
+    def cityrun():
+        print("hurry up")
+        input3 = input("which way, forward or back?")
+        if input3.lower() == "back":
+            print ("you got away safely")
+            wholegame()
+        elif input3.lower() == "forward":
+            print("why would you run forward, you get caught in the middle and leave with some bruises?")
+            wholegame()
+        else:
+            print("forward or back")
+            cityrun()
+    def city():
+        print("you are headed to the city")
+        input2 = input("You see a gang fight, do you run or call the police? ")
+        if input2.lower() == "run":
+            cityrun()
+        elif input2.lower() == "call the police" :
+            citypolice()
+        else:
+            print ("call the police or run")
+            city()
+
+
+
+    def repeat():
+        userinput = input ("you are driving down the road and you come to an intersection, which way do you go?")
+        if userinput.lower() == "left":
+            city()
+        elif userinput.lower() == "right":
+            country()
+        elif userinput.lower() == "straight":
+            airport()
+        else:
+            print ("left, right, or straight")
+            repeat()
+    repeat()
+def wholegame():
+    inputgame = input("do you want to play?")
+    if inputgame.lower() == "yes":
+        wholegame2()
+    elif inputgame.lower() == "no":
+        print("see ya")
+    else:
+        print("yes or no")
+        wholegame()
+wholegame()
